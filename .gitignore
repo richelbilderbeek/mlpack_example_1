@@ -31,3 +31,4 @@
 *.out
 *.app
 nn_regression.cpp
+makefile.mlpack

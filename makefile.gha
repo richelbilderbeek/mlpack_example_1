@@ -1,0 +1,17 @@
+all: mlpack_example_1
+
+mlpack_example_1_own: nn_regression.cpp
+	g++ nn_regression.cpp \
+    -o mlpack_example_1 \
+    -I /usr/include \
+    -fopenmp -std=c++17 \
+    -larmadillo -lmlpack
+
+mlpack_example_1: nn_regression.cpp makefile.mlpack
+	make makefile.mlpack
+
+nn_regression.cpp:
+	wget https://raw.githubusercontent.com/mlpack/examples/master/neural_network_regression/nn_regression.cpp
+
+makefile.mlpack:
+	wget https://raw.githubusercontent.com/mlpack/examples/master/neural_network_regression/Makefile -o makefile.mlpack
