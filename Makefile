@@ -1,4 +1,4 @@
-all: classification.cpp
+all: nn_regression.cpp
 
-classification.cpp:
-	wget https://raw.githubusercontent.com/BVLC/caffe/master/examples/cpp_classification/classification.cpp
+nn_regression.cpp:
+	wget https://raw.githubusercontent.com/mlpack/examples/master/neural_network_regression/nn_regression.cpp
