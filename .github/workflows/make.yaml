@@ -13,5 +13,8 @@ jobs:
       - name: Install libmlpack-dev
         run: sudo apt-get install libmlpack-dev
 
+      - name: Install libensmallen-dev
+        run: sudo apt-get install libensmallen-dev
+
       - name: make
         run: make
